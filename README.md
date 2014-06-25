@@ -1,12 +1,14 @@
-# Levenshtein
+# Levenshtein-steps
 
 [Levenshtein][wikipedia] string difference in Javascript.
 
 ![Screenshot][screenshot]
 
-`Levenshtein` also does some neat things like coerce to a number and string
+`Levenshtein-steps` also does some neat things like coerce to a number and string
 approproately. So you can compare Levenshtein objects directly! Not to mention
 it has specs!
+
+Also it tells you the steps to get from one string to another.
 
 
 ## API
@@ -27,6 +29,10 @@ it has specs!
 
 * `Levenshtein#valueOf()` → `Number`
     * Alias of: `Levenshtein#distance`.
+    
+* `Levenshtein#getSteps()` -> `Array[Array]`
+    * Returns list of the steps to get from string 1 to string 2
+    * Steps in form of lists - `["operation", int_pos_str_1, int_pos_str_2]`
 
 
 ## Installation
@@ -48,38 +54,41 @@ Simply include `levenshtein.js`:
 Install via npm:
 
 ``` sh
-npm install levenshtein
+npm install levenshtein-steps
 ```
 
 Or put it in your `package.json`:
 
 ``` json
-{ "levenshtein": "~1.0" }
+{ "levenshtein-steps": "*" }
 ```
 
 
 ### Bower
 
 ``` sh
-bower install levenshtein
+bower install levenshtein-steps
 ```
 
 
 ### Git
 
 ``` sh
-git clone git://github.com/gf3/Levenshtein.git
+git clone git://github.com/pseudonym117/Levenshtein.git
 ```
 
 
 ## License
 
-Levenshtein is [UNLICENSED][unlicense].
+Levenshtein-steps is [UNLICENSED][unlicense].
 
 
 ## Author
 
 Written by [Gianni Chiappetta][github] &ndash; [gf3.ca][gf3]
+
+Forked and steps added by [AG Stephan][mygit]
+
 
 [gf3]: http://gf3.ca
 [github]: https://github.com/gf3
@@ -87,4 +96,4 @@ Written by [Gianni Chiappetta][github] &ndash; [gf3.ca][gf3]
 [screenshot]: http://f.cl.ly/items/3g1m0u401j0m2H2k0s2X/levenshtein.PNG
 [unlicense]: http://unlicense.org/
 [wikipedia]: http://en.wikipedia.org/wiki/Levenshtein_distance
-
+[mygit]: https://github.com/pseudonym117

@@ -1,13 +1,15 @@
 {
-  "name": "levenshtein",
-  "version": "1.0.4",
-  "main": "lib/levenshtein.js",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "components",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+    "name": "levenshtein-steps",
+    "version": "1.0.5",
+    "main": "lib/levenshtein.js",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "components",
+        "bower_components",
+        "test",
+        "tests",
+        "*.iml",
+        ".idea"
+    ]
 }
