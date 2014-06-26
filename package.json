@@ -2,7 +2,7 @@
     "name": "levenshtein-steps",
     "description": "Javascript implementation of the L-diggity.",
     "author": "AG Stephan <godtheresnonamesleft@gmail.com>",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "main": "./lib/levenshtein",
     "engines": [
         "node >=0.2.0"
